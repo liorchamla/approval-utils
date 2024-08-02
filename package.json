@@ -1,0 +1,33 @@
+{
+  "name": "@liorchamla/approval-utils",
+  "version": "1.0.0",
+  "description": "A utility library for approval testing",
+  "type": "module",
+  "main": "dist/approval-utils.js",
+  "types": "dist/approval-utils.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/approval-utils.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "preversion": "npm run build",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liorchamla/approval-utils.git"
+  },
+  "keywords": ["approval", "testing", "utils"],
+  "author": "Lior Chamlap",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.0.3",
+    "@types/stack-trace": "^0.0.33",
+    "stack-trace": "1.0.0-pre2",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vitest": "^2.0.5"
+  }
+}
