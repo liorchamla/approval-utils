@@ -1,6 +1,6 @@
 {
   "name": "@liorchamla/approval-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A utility library for approval testing",
   "type": "module",
   "main": "dist/approval-utils.js",
@@ -19,7 +19,11 @@
     "type": "git",
     "url": "https://github.com/liorchamla/approval-utils.git"
   },
-  "keywords": ["approval", "testing", "utils"],
+  "keywords": [
+    "approval",
+    "testing",
+    "utils"
+  ],
   "author": "Lior Chamla",
   "license": "ISC",
   "devDependencies": {
