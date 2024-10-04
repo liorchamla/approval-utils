@@ -38,11 +38,11 @@ const logMessage = (message: string) => {
  * @param name The name of the function we are spying on, it will be seen in the output
  * @param returnValue The "mock" value we want it to return
  */
-const spy = (name: string, returnValue: any) => {
+const spy = (name: string, returnValue: any = "NO_VALUE") => {
     return (...params: any[]) => {
         logMessage(`call to ${name}: ${JSON.stringify(params)}`)
 
-        if (!returnValue) {
+        if (returnValue === "NO_VALUE") {
             return
         }
 

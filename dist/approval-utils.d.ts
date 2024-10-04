@@ -7,7 +7,7 @@
  * @param name The name of the function we are spying on, it will be seen in the output
  * @param returnValue The "mock" value we want it to return
  */
-declare const spy: (name: string, returnValue: any) => (...params: any[]) => any;
+declare const spy: (name: string, returnValue?: any) => (...params: any[]) => any;
 /**
  * This function is used to approve the output of a function that has been called with all possible combinations of parameters.
  *
